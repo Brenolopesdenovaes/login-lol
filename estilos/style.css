@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend Deca",sans-serif;
+}
+
+:root{
+    --white:#fff;
+    --whitesmoke: #F9F9F9;
+  --light-grey: #ECECEC;
+  --grey: #C4C4C4;
+  --medium-grey: #A7A7A7;
+  --deep-grey: #343434;
+  --black: #000000;
+  --blue: #1B77F3;
+  --red: #CF3C3F;
+}
+
+
+main{
+    display: flex;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    min-height: 100vh;
+    padding: clamp(35px,8%,70px);
+}
+
+.login-logo{
+    width: 130px;
+    margin-bottom: 80px;
+}
+
+.login-title{
+    color: var(--deep-grey);
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.login-label{
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.input{
+    width: 100%;
+    background-color: var(--light-grey);
+    border: 2px solid rgba(0,0,0,0);
+    border-radius: 5px;
+    outline: none;
+    font-size: 0.9em;
+    padding: 25px 10px 10px;
+    font-weight: 600;
+    color: var(--deep-grey);
+}
+
+.login-label span{
+    position: absolute;
+    font-size: 0.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--medium-grey);
+    margin: 20px;
+    cursor:text;
+    transition: all 200ms ease;
+}
+
+.input:focus{
+    background-color: var(--whitesmoke);
+    border: 2px solid var(--deep-grey);
+}
+
+.login-label .span-active{
+    font-size: 0.7em;
+    margin: 8px 10px;
+}
+
+.login-icons{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.login-icons img {
+    width: 20px;
+}
+
+.icons-button{
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.login-icons .icons-button:nth-child(1){
+    background-color: var(--blue);
+}
+
+.login-icons .icons-button:nth-child(2){
+    background-color: var(--black);
+}
+.login-icons .icons-button:nth-child(3){
+    background-color: var(--light-grey);
+}
+
+.login-label-checkbox{
+    width: 100%;
+    margin: 15px 0 50px;
+    font-size: 0.9em;
+    font-weight: 500;
+    align-items: center;
+}
+
+.checkbox{
+   appearance: none;
+   width: 20px;
+   height: 20px;
+   background-color: var(--light-grey);
+   margin-right: 8px;
+   border-radius: 3px;
+
+}
+
+a{
+    font-size: 0.8em;
+    text-decoration: none;
+    color: var(--medium-grey);
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.wallpaper{
+    width: 100%;
+    background: url('../imagens/wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+}
+
